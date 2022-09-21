@@ -23,9 +23,50 @@ header {
   margin: 0 auto;
 }
 
+nav img {
+  display: block;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 25px 0;
+}
+
+.headline {
+  background-image: url("./img/Header\ bg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 80px 0px;
+  width: 100%;
+}
+
+.headline-content {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.headline-content h1 {
+  font-size: 40px;
+  color: #172b4d;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.headline-content p {
+  color: #344563;
+  margin-bottom: 10px;
+}
+
+.connect {
+  display: block;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #7f8cff;
+  margin-bottom: 10px;
+}
+
+.headline-socials a {
+  margin-right: 18px;
 }
