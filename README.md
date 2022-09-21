@@ -1,7 +1,7 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # Mobile-portfolio-website
-In this project, I was able to build the header and headline sections of my personal portfolio(Mobile version). The goal of this project is to show the importance of using the mobile first approach when building a website.
+In this project, I was able to build the header and headline sections of my personal portfolio(Mobile-view version). The goal of this project is to show the importance of using the mobile first approach when building a website.
 
 
 ## Built With
