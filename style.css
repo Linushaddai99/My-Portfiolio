@@ -92,13 +92,14 @@ nav {
   margin-right: 18px;
 }
 
-.works {
+.works-section {
   display: grid;
   margin: 100px auto;
+  padding: 0 5%;
   gap: 50px;
 }
 
-.work-item {
+.works {
   background-color: white;
   border-radius: 24px;
   border: 1px solid #dfe1e6;
@@ -109,15 +110,15 @@ nav {
   gap: 30px;
 }
 
-.work-item-details {
+.works-details {
   text-align: left;
 }
 
-.work-item-details h2 {
+.works-details h2 {
   color: #172b4d;
 }
 
-.work-item-intro {
+.works-intro {
   width: 100%;
   display: flex;
   justify-content: flex-start;
