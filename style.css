@@ -31,7 +31,7 @@ p {
 .head-section {
   background-color: white;
   margin-top: -30px;
-  border-bottom-left-radius: 15%;
+  border-bottom-left-radius: 100px;
 }
 
 header {
@@ -94,7 +94,7 @@ nav {
 
 .works {
   display: grid;
-  margin-top: 80px;
+  margin: 100px auto;
   gap: 50px;
 }
 
@@ -141,12 +141,12 @@ nav {
   font-weight: 600;
 }
 
-.technologies {
+.works-technologies {
   display: flex;
   margin: 20px 0;
 }
 
-.technologies li {
+.works-technologies li {
   display: inline-block;
   margin-right: 10px;
   padding: 4px 12px;
@@ -156,7 +156,7 @@ nav {
   font-size: 12px;
 }
 
-.work-item a {
+.btn {
   display: inline-block;
   border: 1px solid #6070ff;
   border-radius: 8px;
@@ -164,4 +164,59 @@ nav {
   color: #396df2;
   background-color: white;
   text-decoration: none;
+}
+
+.btn:hover {
+  background: #6070ff;
+  color: white;
+}
+
+.btm:active {
+  background: #2230d2;
+  color: white;
+}
+
+.btn:disabled {
+  border: 1px solid #c1c7d0;
+  color: #c1c7d0;
+  background-color: white;
+}
+
+.about-section {
+  background-color: white;
+  border-top-right-radius: 100px;
+  padding: 114px 0;
+}
+
+.about h2 {
+  font-size: 40px;
+  color: #172b4d;
+}
+
+.about p {
+  margin: 15px 0;
+}
+
+.about .btn {
+  margin: 15px 0;
+}
+
+.about-socials {
+  display: flex;
+}
+
+.about-socials li {
+  margin-right: 15px;
+  display: inline-block;
+}
+
+.about-technologies {
+  width: 90%;
+  margin-top: 50px;
+}
+
+.about-technologies li {
+  display: block;
+  display: flex;
+  justify-content: space-between;
 }
