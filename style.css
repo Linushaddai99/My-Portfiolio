@@ -25,6 +25,7 @@ header {
 
 nav img {
   display: block;
+  cursor: pointer;
 }
 
 nav {
@@ -67,6 +68,7 @@ nav {
   margin-bottom: 10px;
 }
 
-.headline-socials a {
+.headline-socials li {
+  display: inline-block;
   margin-right: 18px;
 }
