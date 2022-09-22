@@ -233,6 +233,7 @@ nav {
 
 .lang-container {
   display: flex;
+  align-items: center;
   margin: 20px 0;
   background: #f7f7f9;
   border-radius: 8px;
@@ -240,10 +241,12 @@ nav {
 }
 
 .lang-container img {
-  margin-right: 16px;
+  margin: 0 16px;
 }
 
 .lang-container p {
+  margin-top: -40px;
+  margin-left: 80px;
   color: #253858;
   font-size: 15px;
 }
