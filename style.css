@@ -217,6 +217,32 @@ nav {
 
 .about-technologies li {
   display: block;
+  border-bottom: 1px solid #dfe1e6;
+  color: black;
+  padding: 20px 0;
+  cursor: pointer;
+}
+
+.about-technologies span {
+  display: inline-block;
+  width: 90%;
+  color: black;
+  font-size: 20px;
+}
+
+.lang-container {
   display: flex;
-  justify-content: space-between;
+  margin: 20px 0;
+  background: #f7f7f9;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.lang-container img {
+  margin-right: 16px;
+}
+
+.lang-container p {
+  color: #253858;
+  font-size: 15px;
 }
