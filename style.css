@@ -143,12 +143,13 @@ nav {
 }
 
 .works-technologies {
-  display: flex;
   margin: 20px 0;
 }
 
 .works-technologies li {
-  display: inline-block;
+  /* display: inline-block; */
+  list-style-type: none;
+  float: left;
   margin-right: 10px;
   padding: 4px 12px;
   background: #ebebff;
