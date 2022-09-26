@@ -114,6 +114,10 @@ nav {
   text-align: left;
 }
 
+.works-details a {
+  clear: both;
+}
+
 .works-details h2 {
   color: #172b4d;
 }
@@ -141,9 +145,15 @@ nav {
   color: #7a869a;
   font-weight: 600;
 }
+.btn-project {
+  display: block;
+  width: 100%;
+}
 
 .works-technologies {
   margin: 20px 0;
+  width: 100%;
+  height: 30px;
 }
 
 .works-technologies li {
