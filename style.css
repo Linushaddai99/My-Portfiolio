@@ -255,18 +255,18 @@ nav {
   background-color: white;
 }
 
- .form-section p {
+.form-section p {
   margin: 25px 0 30px 0;
   color: white;
- }
+}
 
- .form-section h2 {
+.form-section h2 {
   font-size: 40px;
- }
+}
 
 form {
   display: flex;
-  background: #6070FF;
+  background: #6070ff;
   flex-direction: column;
   justify-content: space-between;
   border-top-left-radius: 100px;
@@ -274,7 +274,8 @@ form {
   color: white;
 }
 
-input, textarea {
+input,
+textarea {
   margin-bottom: 20px;
   border-radius: 5px;
   padding: 10px;
@@ -285,7 +286,7 @@ input, textarea {
   width: 100px;
   border-radius: 5px;
   background-color: white;
-  color: #6070FF;
+  color: #6070ff;
   padding: 10px;
   border: none;
 }
