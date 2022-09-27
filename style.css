@@ -250,3 +250,69 @@ nav {
   color: #253858;
   font-size: 15px;
 }
+
+.form-section {
+  background-color: white;
+}
+
+ .form-section p {
+  margin: 25px 0 30px 0;
+  color: white;
+ }
+
+ .form-section h2 {
+  font-size: 40px;
+ }
+
+form {
+  display: flex;
+  background: #6070FF;
+  flex-direction: column;
+  justify-content: space-between;
+  border-top-left-radius: 100px;
+  padding: 150px 5% 50px 5%;
+  color: white;
+}
+
+input, textarea {
+  margin-bottom: 20px;
+  border-radius: 5px;
+  padding: 10px;
+  border: none;
+}
+
+.form-section button {
+  width: 100px;
+  border-radius: 5px;
+  background-color: white;
+  color: #6070FF;
+  padding: 10px;
+  border: none;
+}
+
+.form-section button:hover {
+  background: #6070ff;
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #6070ff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #3b459e;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #171a3a;
+}
