@@ -317,3 +317,13 @@ textarea {
 ::-webkit-scrollbar-thumb:hover {
   background: #171a3a;
 }
+
+@media (min-width: 768px) {
+  .works-section {
+    padding: 0 10%;
+  }
+
+  .works {
+    flex-direction: row;
+  }
+}
