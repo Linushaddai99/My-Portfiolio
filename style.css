@@ -326,4 +326,64 @@ textarea {
   .works {
     flex-direction: row;
   }
+
+  .works:nth-child(2n) {
+    flex-direction: row-reverse;
+  }
+
+  .works img {
+    width: 100%;
+  }
+
+  .works .works-details {
+    width: 100%;
+  }
+
+  .about-section {
+    padding: 8% 5%;
+  }
+
+  .about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .about-1,
+  .about-2 {
+    width: 100%;
+  }
+
+  .about-1 {
+    margin-right: 30px;
+  }
+
+ .about-technologies ul {
+  display: flex;
+  justify-content: flex-start;
+ }
+
+ .lang-container {
+  width: 122px;
+  margin-right: 15px;
+  flex-direction: column;
+ }
+
+ .lang-container p {
+  margin-top: 0;
+  margin-left: 25px;
+  color: #253858;
+  font-size: 15px;
+}
+
+form {
+  padding: 10% 30%;
+  text-align: center;
+}
+
+input,
+textarea {
+  border-radius: 0;
+}
+ 
 }
