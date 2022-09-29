@@ -53,16 +53,16 @@ nav {
   margin: 28px 0;
 }
 
-.navigation ul{
+.navigation ul {
   display: none;
 }
 
-.navigation li{
+.navigation li {
   display: inline-block;
   margin-left: 50px;
 }
 
-.navigation a{
+.navigation a {
   text-decoration: none;
   color: #344563;
   font-size: 15px;
@@ -339,7 +339,7 @@ textarea {
     display: none;
   }
 
-  .navigation ul{
+  .navigation ul {
     display: block;
   }
 
