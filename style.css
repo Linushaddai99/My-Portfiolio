@@ -35,7 +35,7 @@ p {
 }
 
 header {
-  max-width: 90%;
+  max-width: 80%;
   margin: 0 auto;
   background-color: white;
   padding-top: 20px;
@@ -51,6 +51,21 @@ nav {
   justify-content: space-between;
   align-items: center;
   margin: 28px 0;
+}
+
+.navigation ul{
+  display: none;
+}
+
+.navigation li{
+  display: inline-block;
+  margin-left: 50px;
+}
+
+.navigation a{
+  text-decoration: none;
+  color: #344563;
+  font-size: 15px;
 }
 
 .headline {
@@ -320,6 +335,14 @@ textarea {
 }
 
 @media (min-width: 768px) {
+  .hamburger-menu {
+    display: none;
+  }
+
+  .navigation ul{
+    display: block;
+  }
+
   .works-section {
     padding: 0 10%;
     gap: 100px;
@@ -386,5 +409,9 @@ textarea {
   input,
   textarea {
     border-radius: 0;
+  }
+
+  .form-btn {
+    text-align: center;
   }
 }
