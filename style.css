@@ -265,8 +265,9 @@ nav {
 }
 
 form {
-  display: flex;
   background: #6070ff;
+  background-image: url('./img/contact-form-bg.svg');
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   border-top-left-radius: 100px;
@@ -321,6 +322,7 @@ textarea {
 @media (min-width: 768px) {
   .works-section {
     padding: 0 10%;
+    gap: 100px;
   }
 
   .works {
