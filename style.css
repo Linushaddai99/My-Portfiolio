@@ -71,9 +71,10 @@ nav {
 .logo {
   animation: rotate 2s;
 }
+
 @keyframes rotate {
-  from{
-    transform: rotate(0deg);
+  from {
+    transform : rotate(0deg);
   }
   to { transform : rotate(360deg); }
 }
@@ -122,6 +123,10 @@ nav {
   margin: 100px auto;
   padding: 0 5%;
   gap: 50px;
+}
+
+.lang-container img {
+  margin: 0 16px;
 }
 
 .works {
@@ -273,10 +278,6 @@ nav {
   padding: 12px;
 }
 
-.lang-container img {
-  margin: 0 16px;
-}
-
 .lang-container p {
   margin-top: -40px;
   margin-left: 80px;
@@ -322,7 +323,6 @@ textarea:hover {
   padding-left: 30px;
 }
 
-
 .form-section button {
   width: 120px;
   border-radius: 5px;
@@ -362,7 +362,6 @@ textarea:hover {
 .btn-animation {
   transition: all 500ms ease-in-out;
 }
-
 
 @media (min-width: 768px) {
   .hamburger-menu {
