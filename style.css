@@ -68,6 +68,17 @@ nav {
   font-size: 15px;
 }
 
+.logo {
+  animation: rotate 2s;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to { transform: rotate(360deg); }
+}
+
 .headline {
   background-image: url("./img/Header\ bg.svg");
   background-size: cover;
@@ -114,6 +125,10 @@ nav {
   gap: 50px;
 }
 
+.lang-container img {
+  margin: 0 16px;
+}
+
 .works {
   background-color: white;
   border-radius: 24px;
@@ -123,6 +138,14 @@ nav {
   flex-direction: column;
   justify-content: space-between;
   gap: 30px;
+}
+
+.works img {
+  transition: scale 300ms ease-in-out;
+}
+
+.works img:hover {
+  scale: 1.05;
 }
 
 .works-details {
@@ -255,10 +278,6 @@ nav {
   padding: 12px;
 }
 
-.lang-container img {
-  margin: 0 16px;
-}
-
 .lang-container p {
   margin-top: -40px;
   margin-left: 80px;
@@ -296,6 +315,12 @@ textarea {
   border-radius: 5px;
   padding: 15px;
   border: none;
+  transition: padding 300ms ease-in-out;
+}
+
+input:hover,
+textarea:hover {
+  padding-left: 30px;
 }
 
 .form-section button {
@@ -332,6 +357,10 @@ textarea {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #171a3a;
+}
+
+.btn-animation {
+  transition: all 500ms ease-in-out;
 }
 
 @media (min-width: 768px) {
