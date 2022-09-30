@@ -35,7 +35,7 @@ p {
 }
 
 header {
-  max-width: 90%;
+  max-width: 80%;
   margin: 0 auto;
   background-color: white;
   padding-top: 20px;
@@ -51,6 +51,21 @@ nav {
   justify-content: space-between;
   align-items: center;
   margin: 28px 0;
+}
+
+.navigation ul {
+  display: none;
+}
+
+.navigation li {
+  display: inline-block;
+  margin-left: 50px;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #344563;
+  font-size: 15px;
 }
 
 .headline {
@@ -265,8 +280,9 @@ nav {
 }
 
 form {
-  display: flex;
   background: #6070ff;
+  background-image: url('./img/contact-form-bg.svg');
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   border-top-left-radius: 100px;
@@ -316,4 +332,86 @@ textarea {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #171a3a;
+}
+
+@media (min-width: 768px) {
+  .hamburger-menu {
+    display: none;
+  }
+
+  .navigation ul {
+    display: block;
+  }
+
+  .works-section {
+    padding: 0 10%;
+    gap: 100px;
+  }
+
+  .works {
+    flex-direction: row;
+  }
+
+  .works:nth-child(2n) {
+    flex-direction: row-reverse;
+  }
+
+  .works img {
+    width: 100%;
+  }
+
+  .works .works-details {
+    width: 100%;
+  }
+
+  .about-section {
+    padding: 8% 5%;
+  }
+
+  .about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .about-1,
+  .about-2 {
+    width: 100%;
+  }
+
+  .about-1 {
+    margin-right: 30px;
+  }
+
+  .about-technologies ul {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .lang-container {
+    width: 122px;
+    margin-right: 15px;
+    flex-direction: column;
+  }
+
+  .lang-container p {
+    margin-top: 0;
+    margin-left: 25px;
+    color: #253858;
+    font-size: 15px;
+  }
+
+  form {
+    padding: 8% 30%;
+    text-align: center;
+  }
+
+  input,
+  textarea {
+    border-radius: 0;
+  }
+
+  .form-btn {
+    text-align: center;
+  }
 }
