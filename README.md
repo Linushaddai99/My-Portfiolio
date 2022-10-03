@@ -26,7 +26,7 @@ In this project, I was able to build my personal portfolio(Mobile-view version).
 ## Authors
 
 👤 **Linus Shaddai**
-
+- Website: [https://linushaddai99.github.io/My-Portfiolio/](https://linushaddai99.github.io/My-Portfiolio/)
 - GitHub: [@Linushaddai99](https://github.com/Linushaddai99)
 - Twitter: [@ShaddaiLinus](https://twitter.com/ShaddaiLinus)
 - Linkedin: [@ShaddaiLinus](https://www.linkedin.com/in/linusshaddai/)
