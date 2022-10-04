@@ -109,7 +109,7 @@ nav {
   display: block;
   text-transform: uppercase;
   text-decoration: none;
-  color: #5363F7;
+  color: #5363f7;
   margin-bottom: 10px;
 }
 
@@ -191,7 +191,7 @@ nav {
   padding: 4px 12px;
   background: #ebebff;
   border-radius: 8px;
-  color: #4A58D6;
+  color: #4a58d6;
   font-size: 12px;
 }
 
@@ -214,7 +214,6 @@ nav {
   background: #2230d2;
   color: white;
 }
-
 
 .btn:disabled {
   border: 1px solid #c1c7d0;
@@ -300,7 +299,7 @@ nav {
 }
 
 form {
-  background: #5E6BDC;
+  background: #5e6bdc;
   background-image: url('./img/contact-form-bg.svg');
   display: flex;
   flex-direction: column;
@@ -328,7 +327,7 @@ textarea:hover {
   width: 120px;
   border-radius: 5px;
   background-color: white;
-  color: #5261E7;
+  color: #5261e7;
   padding: 15px;
   border: none;
 }
