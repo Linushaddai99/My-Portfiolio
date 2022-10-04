@@ -109,7 +109,7 @@ nav {
   display: block;
   text-transform: uppercase;
   text-decoration: none;
-  color: #7f8cff;
+  color: #5363f7;
   margin-bottom: 10px;
 }
 
@@ -176,7 +176,7 @@ nav {
 .role li {
   margin-left: 30px;
   font-size: 0.8rem;
-  color: #7a869a;
+  color: #657185;
   font-weight: 600;
 }
 
@@ -191,7 +191,7 @@ nav {
   padding: 4px 12px;
   background: #ebebff;
   border-radius: 8px;
-  color: #6070ff;
+  color: #4a58d6;
   font-size: 12px;
 }
 
@@ -210,7 +210,7 @@ nav {
   color: white;
 }
 
-.btm:active {
+.btn:active {
   background: #2230d2;
   color: white;
 }
@@ -299,7 +299,7 @@ nav {
 }
 
 form {
-  background: #6070ff;
+  background: #5e6bdc;
   background-image: url('./img/contact-form-bg.svg');
   display: flex;
   flex-direction: column;
@@ -327,7 +327,7 @@ textarea:hover {
   width: 120px;
   border-radius: 5px;
   background-color: white;
-  color: #6070ff;
+  color: #5261e7;
   padding: 15px;
   border: none;
 }
@@ -337,6 +337,10 @@ textarea:hover {
   color: white;
   border: 1px solid white;
   cursor: pointer;
+}
+
+.donotdisplay {
+  font-size: 0;
 }
 
 /* width */
