@@ -8,7 +8,7 @@
     <title>Linus Shaddai Portfolio</title>
   </head>
   <body>
-    <section class="head-section">
+    <section class="head-section" id="element">
       <header>
         <nav>
           <a href="#">
@@ -21,7 +21,7 @@
               <li><a href="#">Contact</a></li>
             </ul>
             <img
-              class="hamburger-menu"
+              class="hamburger-menu hamburger-js"
               src="./img/Union.svg"
               alt="hambuger menu"
             />
@@ -29,7 +29,7 @@
         </nav>
       </header>
 
-      <section class="headline">
+      <section class="headline" id="element">
         <div class="headline-content container">
           <div class="healine-content-container">
             <h1>I'm Shaddai,<br />Glad to see you</h1>
@@ -168,7 +168,7 @@
       </div>
     </section>
 
-    <section class="about-section">
+    <section class="about-section" id="about-section">
       <div class="container about">
         <div class="about-1">
           <h2>About<br />Myself</h2>
@@ -245,7 +245,7 @@
       </div>
     </section>
 
-    <section class="form-section">
+    <section class="form-section" id="contact-section">
       <form action="https://formspree.io/f/xkneryal" method="post">
         <h2>Contact Me</h2>
         <p>
@@ -288,5 +288,18 @@
         </div>
       </form>
     </section>
+
+    <section class="mobile-menu-wrapper mobile-menu-js hide">
+      <div class="mobile-menu">
+        <div class="close"><img class="close-icon close-js" src="./img/close-icon.svg" alt="close menu"></div>
+        <ul>
+          <li class="mobile-menu-option"><a href="#">Portfolio</a></li>
+          <li class="mobile-menu-option"><a href="#about-section">About</a></li>
+          <li class="mobile-menu-option"><a href="#contact-section">Contact</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <script src="./js/main.js"></script>
   </body>
 </html>
