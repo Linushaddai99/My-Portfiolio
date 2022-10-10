@@ -11,8 +11,8 @@ closeMobileMenu.addEventListener('click', () => {
   mobileMenu.classList.add('hide');
 });
 
-mobileNavigation.forEach(item => {
+mobileNavigation.forEach((item) => {
   item.addEventListener('click', () => {
-      mobileMenu.classList.add('hide');
-  })
+    mobileMenu.classList.add('hide');
+  });
 });
