@@ -408,6 +408,65 @@ textarea:hover {
   font-weight: 600;
 }
 
+.project-popup-wrapper {
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1000000000;
+  background: rgba(193, 199, 208, 0.8);
+  overflow-y: scroll;
+}
+
+.project-popup {
+  background-color: white;
+  max-width: 85%;
+  margin: 70px auto;
+  border-radius: 16px;
+  padding: 30px;
+  position: relative;
+}
+
+.popup-name {
+  color: #172B4D;
+}
+
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popup-image {
+  width: 100%;
+}
+
+.popup-description {
+  font-size: 15px;
+  margin: 35px 0;
+}
+
+.popup-link-container {
+  display: flex;
+  flex-direction: row;
+  padding: 20px 0;
+  border-top: 1px solid #EBECF0;
+}
+
+.popup-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: #396DF2;
+  padding: 10px;
+  border: 1px solid #396DF2;
+  border-radius: 5px;
+  margin-right: 10px;
+  width: 140px;
+}
+
 @media (min-width: 768px) {
   .hamburger-menu {
     display: none;
@@ -487,5 +546,20 @@ textarea:hover {
 
   .form-btn {
     text-align: center;
+  }
+
+  .popup-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 25px;
+  }
+
+  .popup-image {
+    width: 100%;
+  }
+
+  .popup-description {
+    font-size: 20px;
   }
 }

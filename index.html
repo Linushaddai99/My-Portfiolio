@@ -91,7 +91,7 @@
             <li>css</li>
             <li>javascript</li>
           </ul>
-          <a href="#" class="btn btn-animation">See Project</a>
+          <a href="#" class="btn btn-animation" id="project-one">See Project</a>
         </div>
       </div>
 
@@ -102,7 +102,7 @@
           <div class="works-intro">
             <span class="work-name">CANOPY</span>
             <ul class="role">
-              <li>Back End Dev</li>
+              <li>Full Stack Dev</li>
               <li>2015</li>
             </ul>
           </div>
@@ -116,18 +116,18 @@
             <li>javascript</li>
             <li>Ruby on rails</li>
           </ul>
-          <a href="#" class="btn btn-animation">See Project</a>
+          <a href="#" class="btn btn-animation" id="project-two">See Project</a>
         </div>
       </div>
 
       <div class="works">
         <img src="./img/Snapshoot Portfolio3.svg" alt="A picture of a lady practicing yoga" />
         <div class="works-details">
-          <h2>Tonic</h2>
+          <h2>Facebook 360</h2>
           <div class="works-intro">
             <span class="work-name">CANOPY</span>
             <ul class="role">
-              <li>Back End Dev</li>
+              <li>Full Stack Dev</li>
               <li>2015</li>
             </ul>
           </div>
@@ -139,20 +139,19 @@
             <li>html</li>
             <li>css</li>
             <li>javascript</li>
-            <li>Ruby on rails</li>
           </ul>
-          <a href="#" class="btn btn-animation">See Project</a>
+          <a href="#" class="btn btn-animation" id="project-three">See Project</a>
         </div>
       </div>
 
       <div class="works">
         <img src="./img/Snapshoot Portfolio4.svg" alt="Picture of a professional art printing" />
         <div class="works-details">
-          <h2>Tonic</h2>
+          <h2>Uber Navigation</h2>
           <div class="works-intro">
             <span class="work-name">CANOPY</span>
             <ul class="role">
-              <li>Back End Dev</li>
+              <li>Lead Dev</li>
               <li>2015</li>
             </ul>
           </div>
@@ -164,9 +163,8 @@
             <li>html</li>
             <li>css</li>
             <li>javascript</li>
-            <li>Ruby on rails</li>
           </ul>
-          <a href="#" class="btn btn-animation">See Project</a>
+          <a href="#" class="btn btn-animation" id="project-four">See Project</a>
         </div>
       </div>
     </section>
@@ -307,19 +305,34 @@
       <div class="project-popup">
         <div class="popup-header">
           <h2 class="popup-name"></h2>
-          <img class="close-project-popup" src="./img/close-icon.svg" alt="close project popup image">
+          <img class="close-project-popup" src="./img/white-close-icon.svg" alt="close project popup image">
         </div>
-        <ul class="popup-position"></ul>
+        <div >
+          <div class="works-intro">
+          <span class="work-name popup-work-name"></span>
+          <ul class="popup-position role"></ul>
+        </div>
         <img class="popup-image" src="" alt="">
         <div class="popup-body">
           <p class="popup-description"></p>
-          <ul class="popup-technologies-container"></ul>
-          <a href="" class="popup-see-demo"></a>
-          <a href="" class="popup-see-source"></a>
+          <div>
+            <ul class="popup-technologies-container works-technologies"></ul>
+          <div class="popup-link-container">
+            <a href="#" class="popup-link">
+              See live
+              <img src="./img/source-icon.svg" alt="">
+            </a>
+            <a href="#" class="popup-link">
+              See source
+              <img src="./img/live-demo-icon.svg" alt="">
+            </a>
+          </div>
+          </div>
         </div>
       </div>
     </section>
 
     <script src="./js/main.js"></script>
+    <script src="./js/logic.js"></script>
   </body>
 </html>
