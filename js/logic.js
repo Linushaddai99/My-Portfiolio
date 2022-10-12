@@ -10,6 +10,7 @@ const projectTwo = document.querySelector('#project-two');
 const projectThree = document.querySelector('#project-three');
 const projectFour = document.querySelector('#project-four');
 const closePopup = document.querySelector('.close-project-popup');
+const blur = document.querySelector('#element');
 
 const popupOne = {
   name: 'Tonic',
@@ -53,7 +54,7 @@ const popupFour = {
 
 const populateUI = (popup) => {
   popupWrapper.classList.remove('hide');
-  fade.style.filter = 'blur(3px)';
+  blur.style.filter = 'blur(3px)';
   popupName.textContent = popup.name;
   popupWorkName.textContent = popup.workName;
   popupPosition.innerHTML = '';
@@ -86,5 +87,5 @@ projectFour.addEventListener('click', () => {
 
 closePopup.addEventListener('click', () => {
   popupWrapper.classList.add('hide');
-  fade.style.filter = 'blur(0)';
+  blur.style.filter = 'blur(0)';
 });
