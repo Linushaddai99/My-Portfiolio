@@ -147,15 +147,15 @@ projectOne.addEventListener('click', () => {
 projectTwo.addEventListener('click', () => {
   populateUI(popupTwo);
 });
-  
+
 projectThree.addEventListener('click', () => {
   populateUI(popupThree);
 });
-  
+
 projectFour.addEventListener('click', () => {
   populateUI(popupFour);
 });
-  
+
 closePopup.addEventListener('click', () => {
   popupWrapper.classList.add('hide');
   blur.style.filter = 'blur(0)';
