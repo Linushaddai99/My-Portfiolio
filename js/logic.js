@@ -3,6 +3,7 @@ function createPopup() {
   popup.classList = 'project-popup-wrapper hide';
   const projectPopup = document.createElement('div');
   projectPopup.className = 'project-popup';
+
   const popupHeader = document.createElement('div');
   popupHeader.className = 'popup-header';
   const h2 = document.createElement('h2');
@@ -13,7 +14,9 @@ function createPopup() {
   popupHeader.appendChild(h2);
   popupHeader.appendChild(imageClose);
   projectPopup.appendChild(popupHeader);
+
   const popupMain = document.createElement('div');
+
   const worksIntroDiv = document.createElement('div');
   const worksIntro = document.createElement('div');
   worksIntro.className = 'works-intro';
@@ -21,26 +24,32 @@ function createPopup() {
   workName.className = 'work-name popup-work-name';
   const position = document.createElement('ul');
   position.classList = 'popup-position role';
+
   worksIntroDiv.appendChild(worksIntro);
   worksIntro.appendChild(workName);
   worksIntro.appendChild(position);
   popupMain.appendChild(worksIntroDiv);
+
   const imagePopup = document.createElement('img');
   imagePopup.className = 'popup-image';
   popupMain.appendChild(imagePopup);
+
   const popupBody = document.createElement('div');
   popupBody.className = 'popup-body';
   const description = document.createElement('p');
   description.className = 'popup-description';
   popupBody.appendChild(description);
+
   const popupBody2 = document.createElement('div');
   popupBody2.className = 'popup-body2';
   const popupTechnologies = document.createElement('div');
   popupTechnologies.className = 'works-technologies';
   popupTechnologies.id = 'popup-technologies-container';
   popupBody2.appendChild(popupTechnologies);
+
   const popupLinks = document.createElement('div');
   popupLinks.className = 'popup-link-container';
+
   const demoLink = document.createElement('a');
   demoLink.className = 'popup-link';
   demoLink.setAttribute('href', '#');
@@ -50,6 +59,7 @@ function createPopup() {
   demoIcon.setAttribute('src', './img/source-icon.svg');
   demoLink.appendChild(demoIcon);
   popupLinks.appendChild(demoLink);
+
   const liveLink = document.createElement('a');
   liveLink.className = 'popup-link';
   liveLink.setAttribute('href', '#');
@@ -59,11 +69,17 @@ function createPopup() {
   liveIcon.setAttribute('src', './img/live-demo-icon.svg');
   liveLink.appendChild(liveIcon);
   popupLinks.appendChild(liveLink);
+
   popupBody2.appendChild(popupLinks);
+
   popupBody.appendChild(popupBody2);
+
   popupMain.appendChild(popupBody);
+
   projectPopup.appendChild(popupMain);
+
   popup.appendChild(projectPopup);
+  
   document.body.appendChild(popup);
 }
 
