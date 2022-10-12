@@ -180,11 +180,3 @@ function createPopup() {
 
   document.body.appendChild(popup);
 }
-
-
-
-
-
-
-
-
