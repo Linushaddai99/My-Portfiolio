@@ -65,7 +65,7 @@ function createPopup() {
   projectPopup.appendChild(popupMain);
   popup.appendChild(projectPopup);
   document.body.appendChild(popup);
-  }
+}
 
 window.onload = createPopup();
 
@@ -123,40 +123,40 @@ const popupFour = {
   technologies: ['html', 'css', 'javascript'],
 };
 
-  const populateUI = (popupOption) => {
-    popupWrapper.classList.remove('hide');
-    blur.style.filter = 'blur(3px)';
-    popupName.textContent = popupOption.name;
-    popupWorkName.textContent = popupOption.workName;
-    popupPosition.innerHTML = '';
-    popupOption.position.forEach((item) => {
-      popupPosition.innerHTML += `<li>${item}</li>`;
-    });
-    popupImage.setAttribute('src', popupOption.imageUrl);
-    popupDescription.textContent = popupOption.description;
-    popupTech.innerHTML = '';
-    popupOption.technologies.forEach((item) => {
-      popupTech.innerHTML += `<li>${item}</li>`;
-    });
-  };
+const populateUI = (popupOption) => {
+  popupWrapper.classList.remove('hide');
+  blur.style.filter = 'blur(3px)';
+  popupName.textContent = popupOption.name;
+  popupWorkName.textContent = popupOption.workName;
+  popupPosition.innerHTML = '';
+  popupOption.position.forEach((item) => {
+    popupPosition.innerHTML += `<li>${item}</li>`;
+  });
+  popupImage.setAttribute('src', popupOption.imageUrl);
+  popupDescription.textContent = popupOption.description;
+  popupTech.innerHTML = '';
+  popupOption.technologies.forEach((item) => {
+    popupTech.innerHTML += `<li>${item}</li>`;
+  });
+};
 
-  projectOne.addEventListener('click', () => {
-    populateUI(popupOne);
-  });
+projectOne.addEventListener('click', () => {
+  populateUI(popupOne);
+});
+
+projectTwo.addEventListener('click', () => {
+  populateUI(popupTwo);
+});
   
-  projectTwo.addEventListener('click', () => {
-    populateUI(popupTwo);
-  });
+projectThree.addEventListener('click', () => {
+  populateUI(popupThree);
+});
   
-  projectThree.addEventListener('click', () => {
-    populateUI(popupThree);
-  });
+projectFour.addEventListener('click', () => {
+  populateUI(popupFour);
+});
   
-  projectFour.addEventListener('click', () => {
-    populateUI(popupFour);
-  });
-  
-  closePopup.addEventListener('click', () => {
-    popupWrapper.classList.add('hide');
-    blur.style.filter = 'blur(0)';
-  });
+closePopup.addEventListener('click', () => {
+  popupWrapper.classList.add('hide');
+  blur.style.filter = 'blur(0)';
+});
