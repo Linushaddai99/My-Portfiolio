@@ -10,7 +10,6 @@ const projectTwo = document.querySelector('#project-two');
 const projectThree = document.querySelector('#project-three');
 const projectFour = document.querySelector('#project-four');
 const closePopup = document.querySelector('.close-project-popup');
-const fade = document.querySelector('#element');
 
 const popupOne = {
   name: 'Tonic',
