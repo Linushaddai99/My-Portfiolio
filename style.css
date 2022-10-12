@@ -189,6 +189,10 @@ nav {
   margin: 20px 0;
 }
 
+#popup-technologies-container {
+  margin: 20px 0;
+}
+
 .works-technologies li {
   display: inline-block;
   margin-right: 10px;
@@ -449,20 +453,23 @@ textarea:hover {
 
 .popup-image {
   width: 100%;
+  margin-bottom: 20px;
 }
 
 .popup-description {
   font-size: 15px;
-  margin: 35px 0;
 }
 
 .popup-link-container {
   display: flex;
   flex-direction: row;
+  border-top: 1px solid #ebecf0;
+  padding-top: 20px;
 }
 
 .popup-link {
   display: flex;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   text-decoration: none;
@@ -561,7 +568,6 @@ textarea:hover {
   .popup-body {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
     gap: 25px;
   }
 
@@ -572,5 +578,14 @@ textarea:hover {
   .popup-description {
     font-size: 15px;
     width: 70%;
+  }
+
+  #popup-technologies-container {
+    margin:0;
+    margin-bottom: 20px;
+  }
+
+  .popup-link {
+    width: auto;
   }
 }

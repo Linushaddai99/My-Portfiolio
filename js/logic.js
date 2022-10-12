@@ -1,10 +1,12 @@
+createPopup();
+
 const popupWrapper = document.querySelector('.project-popup-wrapper');
 const popupName = document.querySelector('.popup-name');
 const popupPosition = document.querySelector('.popup-position');
 const popupWorkName = document.querySelector('.popup-work-name');
 const popupImage = document.querySelector('.popup-image');
 const popupDescription = document.querySelector('.popup-description');
-const popupTech = document.querySelector('.popup-technologies-container');
+const popupTech = document.querySelector('#popup-technologies-container');
 const projectOne = document.querySelector('#project-one');
 const projectTwo = document.querySelector('#project-two');
 const projectThree = document.querySelector('#project-three');
@@ -52,19 +54,19 @@ const popupFour = {
   technologies: ['html', 'css', 'javascript'],
 };
 
-const populateUI = (popup) => {
+const populateUI = (popupOption) => {
   popupWrapper.classList.remove('hide');
   blur.style.filter = 'blur(3px)';
-  popupName.textContent = popup.name;
-  popupWorkName.textContent = popup.workName;
+  popupName.textContent = popupOption.name;
+  popupWorkName.textContent = popupOption.workName;
   popupPosition.innerHTML = '';
-  popup.position.forEach((item) => {
+  popupOption.position.forEach((item) => {
     popupPosition.innerHTML += `<li>${item}</li>`;
   });
-  popupImage.setAttribute('src', popup.imageUrl);
-  popupDescription.textContent = popup.description;
+  popupImage.setAttribute('src', popupOption.imageUrl);
+  popupDescription.textContent = popupOption.description;
   popupTech.innerHTML = '';
-  popup.technologies.forEach((item) => {
+  popupOption.technologies.forEach((item) => {
     popupTech.innerHTML += `<li>${item}</li>`;
   });
 };
@@ -89,3 +91,99 @@ closePopup.addEventListener('click', () => {
   popupWrapper.classList.add('hide');
   blur.style.filter = 'blur(0)';
 });
+
+function createPopup() {
+  let popup = document.createElement('section');
+  popup.classList = 'project-popup-wrapper hide';
+  let projectPopup = document.createElement('div');
+  projectPopup.className = 'project-popup';
+
+  let popupHeader = document.createElement('div');
+  popupHeader.className = 'popup-header'
+  let h2 = document.createElement('h2');
+  h2.className = 'popup-name';
+  let imageClose = document.createElement('img');
+  imageClose.className = 'close-project-popup';
+  imageClose.setAttribute('src', './img/white-close-icon.svg')
+
+  popupHeader.appendChild(h2);
+  popupHeader.appendChild(imageClose);
+  projectPopup.appendChild(popupHeader)
+
+  let popupMain = document.createElement('div');
+
+  let worksIntroDiv = document.createElement('div')
+  let worksIntro = document.createElement('div');
+  worksIntro.className = 'works-intro';
+  let workName = document.createElement('span');
+  workName.className = 'work-name popup-work-name';
+  let position = document.createElement('ul');
+  position.classList = 'popup-position role';
+
+  worksIntroDiv.appendChild(worksIntro);
+  worksIntro.appendChild(workName);
+  worksIntro.appendChild(position);
+
+  popupMain.appendChild(worksIntroDiv);
+
+  let imagePopup = document.createElement('img');
+  imagePopup.className = 'popup-image';
+  popupMain.appendChild(imagePopup);
+
+  let popupBody = document.createElement('div');
+  popupBody.className = 'popup-body';
+  let description = document.createElement('p');
+  description.className = 'popup-description';
+
+  popupBody.appendChild(description);
+
+  let popupBody2 = document.createElement('div');
+  popupBody2.className = 'popup-body2';
+  let popupTechnologies = document.createElement('div');
+  popupTechnologies.className = 'works-technologies';
+  popupTechnologies.id = 'popup-technologies-container';
+
+  popupBody2.appendChild(popupTechnologies);
+
+  let popupLinks = document.createElement('div')
+  popupLinks.className = 'popup-link-container';
+
+  let demoLink = document.createElement('a');
+  demoLink.className = 'popup-link'
+  demoLink.setAttribute('href', '#');
+  let demoText = document.createTextNode('See live');
+  demoLink.appendChild(demoText);
+  let demoIcon = document.createElement('img');
+  demoIcon.setAttribute('src', './img/source-icon.svg');
+  demoLink.appendChild(demoIcon);
+  popupLinks.appendChild(demoLink)
+
+  let liveLink = document.createElement('a');
+  liveLink.className = 'popup-link'
+  liveLink.setAttribute('href', '#');
+  let liveText = document.createTextNode('See source');
+  liveLink.appendChild(liveText);
+  let liveIcon = document.createElement('img');
+  liveIcon.setAttribute('src', './img/live-demo-icon.svg');
+  liveLink.appendChild(liveIcon);
+  popupLinks.appendChild(liveLink);
+
+  popupBody2.appendChild(popupLinks);
+
+  popupBody.appendChild(popupBody2);
+
+  popupMain.appendChild(popupBody);
+
+  projectPopup.appendChild(popupMain);
+
+  popup.appendChild(projectPopup);
+
+  document.body.appendChild(popup);
+}
+
+
+
+
+
+
+
