@@ -79,7 +79,6 @@ function createPopup() {
   projectPopup.appendChild(popupMain);
 
   popup.appendChild(projectPopup);
-  
   document.body.appendChild(popup);
 }
 
