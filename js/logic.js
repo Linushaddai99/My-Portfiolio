@@ -1,4 +1,4 @@
-createPopup();
+window.onload = createPopup();
 
 const popupWrapper = document.querySelector('.project-popup-wrapper');
 const popupName = document.querySelector('.popup-name');
@@ -93,31 +93,31 @@ closePopup.addEventListener('click', () => {
 });
 
 function createPopup() {
-  let popup = document.createElement('section');
+  const popup = document.createElement('section');
   popup.classList = 'project-popup-wrapper hide';
-  let projectPopup = document.createElement('div');
+  const projectPopup = document.createElement('div');
   projectPopup.className = 'project-popup';
 
-  let popupHeader = document.createElement('div');
-  popupHeader.className = 'popup-header'
-  let h2 = document.createElement('h2');
+  const popupHeader = document.createElement('div');
+  popupHeader.className = 'popup-header';
+  const h2 = document.createElement('h2');
   h2.className = 'popup-name';
-  let imageClose = document.createElement('img');
+  const imageClose = document.createElement('img');
   imageClose.className = 'close-project-popup';
-  imageClose.setAttribute('src', './img/white-close-icon.svg')
+  imageClose.setAttribute('src', './img/white-close-icon.svg');
 
   popupHeader.appendChild(h2);
   popupHeader.appendChild(imageClose);
-  projectPopup.appendChild(popupHeader)
+  projectPopup.appendChild(popupHeader);
 
-  let popupMain = document.createElement('div');
+  const popupMain = document.createElement('div');
 
-  let worksIntroDiv = document.createElement('div')
-  let worksIntro = document.createElement('div');
+  const worksIntroDiv = document.createElement('div');
+  const worksIntro = document.createElement('div');
   worksIntro.className = 'works-intro';
-  let workName = document.createElement('span');
+  const workName = document.createElement('span');
   workName.className = 'work-name popup-work-name';
-  let position = document.createElement('ul');
+  const position = document.createElement('ul');
   position.classList = 'popup-position role';
 
   worksIntroDiv.appendChild(worksIntro);
@@ -126,44 +126,44 @@ function createPopup() {
 
   popupMain.appendChild(worksIntroDiv);
 
-  let imagePopup = document.createElement('img');
+  const imagePopup = document.createElement('img');
   imagePopup.className = 'popup-image';
   popupMain.appendChild(imagePopup);
 
-  let popupBody = document.createElement('div');
+  const popupBody = document.createElement('div');
   popupBody.className = 'popup-body';
-  let description = document.createElement('p');
+  const description = document.createElement('p');
   description.className = 'popup-description';
 
   popupBody.appendChild(description);
 
-  let popupBody2 = document.createElement('div');
+  const popupBody2 = document.createElement('div');
   popupBody2.className = 'popup-body2';
-  let popupTechnologies = document.createElement('div');
+  const popupTechnologies = document.createElement('div');
   popupTechnologies.className = 'works-technologies';
   popupTechnologies.id = 'popup-technologies-container';
 
   popupBody2.appendChild(popupTechnologies);
 
-  let popupLinks = document.createElement('div')
+  const popupLinks = document.createElement('div');
   popupLinks.className = 'popup-link-container';
 
-  let demoLink = document.createElement('a');
-  demoLink.className = 'popup-link'
+  const demoLink = document.createElement('a');
+  demoLink.className = 'popup-link';
   demoLink.setAttribute('href', '#');
-  let demoText = document.createTextNode('See live');
+  const demoText = document.createTextNode('See live');
   demoLink.appendChild(demoText);
-  let demoIcon = document.createElement('img');
+  const demoIcon = document.createElement('img');
   demoIcon.setAttribute('src', './img/source-icon.svg');
   demoLink.appendChild(demoIcon);
-  popupLinks.appendChild(demoLink)
+  popupLinks.appendChild(demoLink);
 
-  let liveLink = document.createElement('a');
-  liveLink.className = 'popup-link'
+  const liveLink = document.createElement('a');
+  liveLink.className = 'popup-link';
   liveLink.setAttribute('href', '#');
-  let liveText = document.createTextNode('See source');
+  const liveText = document.createTextNode('See source');
   liveLink.appendChild(liveText);
-  let liveIcon = document.createElement('img');
+  const liveIcon = document.createElement('img');
   liveIcon.setAttribute('src', './img/live-demo-icon.svg');
   liveLink.appendChild(liveIcon);
   popupLinks.appendChild(liveLink);
@@ -180,6 +180,7 @@ function createPopup() {
 
   document.body.appendChild(popup);
 }
+
 
 
 
