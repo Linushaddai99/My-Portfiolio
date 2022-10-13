@@ -95,14 +95,8 @@ const popupWorkName = document.querySelector('.popup-work-name');
 const popupImage = document.querySelector('.popup-image');
 const popupDescription = document.querySelector('.popup-description');
 const popupTech = document.querySelector('#popup-technologies-container');
-const projectOne = document.querySelector('#project-0');
-const projectTwo = document.querySelector('#project-1');
-const projectThree = document.querySelector('#project-2');
-const projectFour = document.querySelector('#project-3');
-const closePopup = document.querySelector('.close-project-popup');
 const blur = document.querySelector('#element');
 const workSection = document.querySelector('.works-section');
-const popupBtn = document.querySelectorAll('.popup-btn');
 
 const projectDatas = [
   {
@@ -164,11 +158,11 @@ const populateUI = (popupOption) => {
 const createCard = (project, position) => {
   const workDiv = document.createElement('div');
   workDiv.className = 'works';
-
+  
   const workImg = document.createElement('img');
   workImg.setAttribute('src', project.imageUrl);
 
-  workDiv.appendChild(workImg)
+  workDiv.appendChild(workImg);
 
   const workDetails = document.createElement('div');
   workDetails.className = 'works-details';
@@ -188,7 +182,7 @@ const createCard = (project, position) => {
   const ulOne = document.createElement('ul');
   ulOne.className = 'role';
   let liOne = '';
-  for (let i = 0; i < project.position.length; i++) {
+  for (let i = 0; i < project.position.length; i += 1) {
     liOne += `<li>${project.position[i]}</li>`;
   }
   ulOne.innerHTML = liOne;
@@ -197,14 +191,14 @@ const createCard = (project, position) => {
   workDetails.appendChild(projectWorkIntro);
 
   const summary = document.createElement('p');
-  summary.innerHTML = 'A daily selection of privately personalized reads; no accounts or sign-ups required.'
+  summary.innerHTML = 'A daily selection of privately personalized reads; no accounts or sign-ups required.';
 
   workDetails.appendChild(summary);
 
   const ulTwo = document.createElement('ul');
   ulTwo.className = 'works-technologies';
   let liTwo = '';
-  for (let i = 0; i < project.technologies.length; i++) {
+  for (let i = 0; i < project.technologies.length; i += 1) {
     liTwo += `<li>${project.technologies[i]}</li>`;
   }
   ulTwo.innerHTML = liTwo;
@@ -234,4 +228,3 @@ const populatePage = (arr) => {
 };
 
 populatePage(projectDatas);
-
