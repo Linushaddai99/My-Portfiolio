@@ -480,6 +480,13 @@ textarea:hover {
   margin-right: 10px;
 }
 
+.error-mssg {
+  color: #f8a296 !important;
+  font-size: 16px;
+  display: block;
+  margin-top: 10px;
+}
+
 @media (min-width: 768px) {
   .hamburger-menu {
     display: none;
