@@ -34,6 +34,7 @@ function validateForm() {
     error.innerHTML = 'Email must be in lower case';
   }
 }
+
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   validateForm();
