@@ -11,6 +11,10 @@ function createPopup() {
   const imageClose = document.createElement('img');
   imageClose.className = 'close-project-popup';
   imageClose.setAttribute('src', './img/white-close-icon.svg');
+  imageClose.addEventListener('click', () => {
+    popupWrapper.classList.add('hide');
+    blur.style.filter = 'blur(0)';
+  });
   popupHeader.appendChild(h2);
   popupHeader.appendChild(imageClose);
   projectPopup.appendChild(popupHeader);
@@ -91,12 +95,14 @@ const popupWorkName = document.querySelector('.popup-work-name');
 const popupImage = document.querySelector('.popup-image');
 const popupDescription = document.querySelector('.popup-description');
 const popupTech = document.querySelector('#popup-technologies-container');
-const projectOne = document.querySelector('#project-one');
-const projectTwo = document.querySelector('#project-two');
-const projectThree = document.querySelector('#project-three');
-const projectFour = document.querySelector('#project-four');
+const projectOne = document.querySelector('#project-0');
+const projectTwo = document.querySelector('#project-1');
+const projectThree = document.querySelector('#project-2');
+const projectFour = document.querySelector('#project-3');
 const closePopup = document.querySelector('.close-project-popup');
 const blur = document.querySelector('#element');
+const workSection = document.querySelector('.works-section');
+const popupBtn = document.querySelectorAll('.popup-btn');
 
 const projectDatas = [
   {
@@ -154,23 +160,78 @@ const populateUI = (popupOption) => {
   });
 };
 
-projectOne.addEventListener('click', () => {
-  populateUI(projectDatas[0]);
-});
 
-projectTwo.addEventListener('click', () => {
-  populateUI(projectDatas[1]);
-});
+const createCard = (project, position) => {
+  const workDiv = document.createElement('div');
+  workDiv.className = 'works';
 
-projectThree.addEventListener('click', () => {
-  populateUI(projectDatas[2]);
-});
+  const workImg = document.createElement('img');
+  workImg.setAttribute('src', project.imageUrl);
 
-projectFour.addEventListener('click', () => {
-  populateUI(projectDatas[3]);
-});
+  workDiv.appendChild(workImg)
 
-closePopup.addEventListener('click', () => {
-  popupWrapper.classList.add('hide');
-  blur.style.filter = 'blur(0)';
-});
+  const workDetails = document.createElement('div');
+  workDetails.className = 'works-details';
+
+  const workTitle = document.createElement('h2');
+  workTitle.innerHTML = project.name;
+  workDetails.appendChild(workTitle);
+
+  const projectWorkIntro = document.createElement('div');
+  projectWorkIntro.className = 'works-intro';
+
+  const span = document.createElement('span');
+  span.className = 'work-name';
+  span.innerHTML = project.workName;
+  projectWorkIntro.appendChild(span)
+
+  const ulOne = document.createElement('ul');
+  ulOne.className = 'role';
+  let liOne = '';
+  for (let i = 0; i < project.position.length; i++) {
+    liOne += `<li>${project.position[i]}</li>`;
+  }
+  ulOne.innerHTML = liOne;
+  projectWorkIntro.appendChild(ulOne);
+
+  workDetails.appendChild(projectWorkIntro);
+
+  const summary = document.createElement('p');
+  summary.innerHTML = 'A daily selection of privately personalized reads; no accounts or sign-ups required.'
+
+  workDetails.appendChild(summary);
+
+  const ulTwo = document.createElement('ul');
+  ulTwo.className = 'works-technologies';
+  let liTwo = '';
+  for (let i = 0; i < project.technologies.length; i++) {
+    liTwo += `<li>${project.technologies[i]}</li>`;
+  }
+  ulTwo.innerHTML = liTwo;
+
+  workDetails.appendChild(ulTwo);
+
+  const projectButton = document.createElement('button');
+  projectButton.id = `project-${position}`;
+  projectButton.classList = 'btn btn-animation popup-btn';
+  projectButton.innerHTML = 'See Project';
+
+  projectButton.addEventListener('click', () => {
+    populateUI(projectDatas[position]);
+  });
+
+  workDetails.appendChild(projectButton);
+
+  workDiv.appendChild(workDetails)
+
+  workSection.appendChild(workDiv);
+};
+
+const populatePage = (arr) => {
+  for (let i = 0; i < arr.length; i++) {
+    createCard(arr[i], i);
+  }
+};
+
+populatePage(projectDatas);
+
