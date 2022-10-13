@@ -12,8 +12,7 @@ function createPopup() {
   imageClose.className = 'close-project-popup';
   imageClose.setAttribute('src', './img/white-close-icon.svg');
   imageClose.addEventListener('click', () => {
-    popupWrapper.classList.add('hide');
-    blur.style.filter = 'blur(0)';
+    popup.classList.add('hide');
   });
   popupHeader.appendChild(h2);
   popupHeader.appendChild(imageClose);
@@ -87,15 +86,13 @@ function createPopup() {
 }
 
 window.onload = createPopup();
-
-const popupWrapper = document.querySelector('.project-popup-wrapper');
+const popupWrapper = document.querySelector('.project-popup-wrapper')
 const popupName = document.querySelector('.popup-name');
 const popupPosition = document.querySelector('.popup-position');
 const popupWorkName = document.querySelector('.popup-work-name');
 const popupImage = document.querySelector('.popup-image');
 const popupDescription = document.querySelector('.popup-description');
 const popupTech = document.querySelector('#popup-technologies-container');
-const blur = document.querySelector('#element');
 const workSection = document.querySelector('.works-section');
 
 const projectDatas = [
@@ -139,7 +136,6 @@ const projectDatas = [
 
 const populateUI = (popupOption) => {
   popupWrapper.classList.remove('hide');
-  blur.style.filter = 'blur(3px)';
   popupName.textContent = popupOption.name;
   popupWorkName.textContent = popupOption.workName;
   popupPosition.innerHTML = '';
@@ -154,11 +150,9 @@ const populateUI = (popupOption) => {
   });
 };
 
-
 const createCard = (project, position) => {
   const workDiv = document.createElement('div');
   workDiv.className = 'works';
-  
   const workImg = document.createElement('img');
   workImg.setAttribute('src', project.imageUrl);
 
@@ -177,7 +171,7 @@ const createCard = (project, position) => {
   const span = document.createElement('span');
   span.className = 'work-name';
   span.innerHTML = project.workName;
-  projectWorkIntro.appendChild(span)
+  projectWorkIntro.appendChild(span);
 
   const ulOne = document.createElement('ul');
   ulOne.className = 'role';
@@ -216,13 +210,13 @@ const createCard = (project, position) => {
 
   workDetails.appendChild(projectButton);
 
-  workDiv.appendChild(workDetails)
+  workDiv.appendChild(workDetails);
 
   workSection.appendChild(workDiv);
 };
 
 const populatePage = (arr) => {
-  for (let i = 0; i < arr.length; i++) {
+  for (let i = 0; i < arr.length; i += 1) {
     createCard(arr[i], i);
   }
 };
