@@ -31,11 +31,11 @@ In this project, I was able to build my personal portfolio . The goal of this pr
 - Twitter: [@ShaddaiLinus](https://twitter.com/ShaddaiLinus)
 - Linkedin: [@ShaddaiLinus](https://www.linkedin.com/in/linusshaddai/)
 
-👤 **Abdifatah**
+👤 **Ndaboom**
 
-- GitHub: [@AbdifatahYasin1](https://github.com/AbdifatahYasin1)
-- Twitter: [@CabdifataaxYuusuf](https://twitter.com/CabdifataaxYy)
-- LinkedIn: [Cabdifataax Yaasiin](https://www.linkedin.com/in/cabdifataax-yaasiin-69977019a/)
+- GitHub: [@Ndaboom](https://github.com/Ndaboom)
+- Twitter: [@CabdifataaxYuusuf](https://twitter.com/ndabosammy)
+- LinkedIn: [Cabdifataax Yaasiin](https://www.linkedin.com/in/sam-ndabo-b0431b17b/)
 
 ## Show your support
 

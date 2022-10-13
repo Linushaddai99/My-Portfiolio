@@ -1,3 +1,4 @@
+// variables for mobile menu
 const hamburgerMenu = document.querySelector('.hamburger-js');
 const mobileMenu = document.querySelector('.mobile-menu-js');
 const closeMobileMenu = document.querySelector('.close-js');

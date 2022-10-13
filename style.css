@@ -144,6 +144,10 @@ nav {
   transition: scale 300ms ease-in-out;
 }
 
+.popup-link img {
+  margin-left: 5px;
+}
+
 .works img:hover {
   scale: 1.05;
 }
@@ -185,6 +189,10 @@ nav {
   margin: 20px 0;
 }
 
+#popup-technologies-container {
+  margin: 20px 0;
+}
+
 .works-technologies li {
   display: inline-block;
   margin-right: 10px;
@@ -196,12 +204,12 @@ nav {
 }
 
 .btn {
-  display: inline-block;
   border: 1px solid #6070ff;
   border-radius: 8px;
   padding: 12px;
   color: #396df2;
   background-color: white;
+  font-size: 15px;
   text-decoration: none;
 }
 
@@ -242,6 +250,7 @@ nav {
 
 .about-socials {
   display: flex;
+  margin-bottom: 20px;
 }
 
 .about-socials li {
@@ -408,6 +417,69 @@ textarea:hover {
   font-weight: 600;
 }
 
+.project-popup-wrapper {
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1000000000;
+  background: rgba(193, 199, 208, 0.75);
+  overflow-y: scroll;
+}
+
+.project-popup {
+  background-color: white;
+  max-width: 85%;
+  margin: 70px auto;
+  border-radius: 16px;
+  padding: 30px;
+  position: relative;
+}
+
+.popup-name {
+  color: #172b4d;
+}
+
+.close-project-popup {
+  cursor: pointer;
+}
+
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popup-image {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.popup-description {
+  font-size: 15px;
+}
+
+.popup-link-container {
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid #ebecf0;
+  padding-top: 20px;
+}
+
+.popup-link {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: #396df2;
+  padding: 10px;
+  border: 1px solid #396df2;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
 @media (min-width: 768px) {
   .hamburger-menu {
     display: none;
@@ -487,5 +559,33 @@ textarea:hover {
 
   .form-btn {
     text-align: center;
+  }
+
+  .project-popup {
+    max-width: 80%;
+  }
+
+  .popup-body {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+  }
+
+  .popup-image {
+    width: 100%;
+  }
+
+  .popup-description {
+    font-size: 15px;
+    width: 70%;
+  }
+
+  #popup-technologies-container {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .popup-link {
+    width: auto;
   }
 }
