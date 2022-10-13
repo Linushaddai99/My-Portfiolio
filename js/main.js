@@ -8,7 +8,6 @@ const form = document.querySelector('.form-section');
 const email = document.getElementById('email');
 const error = document.querySelector('.error-mssg');
 
-
 hamburgerMenu.addEventListener('click', () => {
   mobileMenu.classList.remove('hide');
   fade.style.filter = 'blur(3px)';
@@ -26,13 +25,12 @@ mobileNavigation.forEach((item) => {
   });
 });
 
-
 function validateForm() {
   if (email.value === email.value.toLowerCase()) {
     form.submit();
     form.reset();
   } else {
-    error.classList.remove('hide')
+    error.classList.remove('hide');
     error.innerHTML = 'Email must be in lower case';
   }
 }
