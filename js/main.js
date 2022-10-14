@@ -57,6 +57,7 @@ inputElements.forEach((input) => {
     savetoLocalStorage();
   });
 });
+
 // Get Data from LS
 document.addEventListener('DOMContentLoaded', () => {
   const formDataInputs = JSON.parse(localStorage.getItem('formData'));
