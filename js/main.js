@@ -49,7 +49,7 @@ function savetoLocalStorage() {
     email: email.value,
     message: msgElement.value,
   };
-  localStorage.setItem('formData', JSON.stringify(formData));
+  localStorage.set('formData', JSON.stringify(formData));
 }
 
 inputElements.forEach((input) => {
