@@ -11,7 +11,6 @@ const msgElement = document.getElementById('message');
 const error = document.querySelector('.error-mssg');
 const inputElements = document.querySelectorAll('.form-data');
 
-
 hamburgerMenu.addEventListener('click', () => {
   mobileMenu.classList.remove('hide');
   fade.style.filter = 'blur(3px)';
@@ -44,7 +43,7 @@ formElement.addEventListener('submit', (e) => {
   validateForm();
 });
 
-function savetoLocalStorage(){
+function savetoLocalStorage() {
   const formData = {
     name: nameElement.value,
     email: email.value,
@@ -58,7 +57,7 @@ inputElements.forEach((input) => {
     savetoLocalStorage();
   });
 });
-//Get Data from LS
+// Get Data from LS
 // document.addEventListener('DOMContentLoaded',()=>{
 //  let formDataInputs = JSON.parse(localStorage.getItem('formData'));
 //  if(formDataInputs != null){
