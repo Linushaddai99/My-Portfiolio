@@ -45,17 +45,25 @@ formElement.addEventListener('submit', (e) => {
 });
 
 function savetoLocalStorage(){
-  let formData = {
+  const formData = {
     name: nameElement.value,
     email: email.value,
-    message: msgElement.value
-  }
+    message: msgElement.value,
+  };
   localStorage.setItem('formData', JSON.stringify(formData));
 }
 
-inputElements.forEach((input)=>{
-  input.addEventListener('input',()=>{
+inputElements.forEach((input) => {
+  input.addEventListener('input', () => {
     savetoLocalStorage();
-  })
-})
-
+  });
+});
+//Get Data from LS
+// document.addEventListener('DOMContentLoaded',()=>{
+//  let formDataInputs = JSON.parse(localStorage.getItem('formData'));
+//  if(formDataInputs != null){
+//  nameElement.value= formDataInputs.name;
+//   email.value = formDataInputs.email;
+//   msgElement.value =  formDataInputs.message;
+//  }
+// });
