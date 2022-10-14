@@ -86,6 +86,7 @@ function createPopup() {
 }
 
 window.onload = createPopup();
+
 const popupWrapper = document.querySelector('.project-popup-wrapper');
 const popupName = document.querySelector('.popup-name');
 const popupPosition = document.querySelector('.popup-position');

@@ -4,9 +4,12 @@ const mobileMenu = document.querySelector('.mobile-menu-js');
 const closeMobileMenu = document.querySelector('.close-js');
 const mobileNavigation = document.querySelectorAll('.mobile-menu-option');
 const fade = document.querySelector('#element');
-const form = document.querySelector('.form-section');
+const formElement = document.querySelector('#form');
 const email = document.getElementById('email');
+const nameElement = document.getElementById('name');
+const msgElement = document.getElementById('message');
 const error = document.querySelector('.error-mssg');
+const inputElements = document.querySelectorAll('.form-data');
 
 hamburgerMenu.addEventListener('click', () => {
   mobileMenu.classList.remove('hide');
@@ -27,15 +30,40 @@ mobileNavigation.forEach((item) => {
 
 function validateForm() {
   if (email.value === email.value.toLowerCase()) {
-    form.submit();
-    form.reset();
+    formElement.submit();
+    formElement.reset();
   } else {
     error.classList.remove('hide');
     error.innerHTML = 'Email must be in lower case';
   }
 }
 
-form.addEventListener('submit', (e) => {
+formElement.addEventListener('submit', (e) => {
   e.preventDefault();
   validateForm();
+});
+
+function savetoLocalStorage() {
+  const formData = {
+    name: nameElement.value,
+    email: email.value,
+    message: msgElement.value,
+  };
+  localStorage.setItem('formData', JSON.stringify(formData));
+}
+
+inputElements.forEach((input) => {
+  input.addEventListener('input', () => {
+    savetoLocalStorage();
+  });
+});
+
+// Get Data from LS
+document.addEventListener('DOMContentLoaded', () => {
+  const formDataInputs = JSON.parse(localStorage.getItem('formData'));
+  if (formDataInputs != null) {
+    nameElement.value = formDataInputs.name;
+    email.value = formDataInputs.email;
+    msgElement.value = formDataInputs.message;
+  }
 });

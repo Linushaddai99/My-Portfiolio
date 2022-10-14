@@ -12,7 +12,11 @@
       <header>
         <nav>
           <a href="#">
-            <img class="logo" src="./img/Logo Placeholder.svg" alt="A picture of my personal logo" />
+            <img
+              class="logo"
+              src="./img/Logo Placeholder.svg"
+              alt="A picture of my personal logo"
+            />
           </a>
           <div class="navigation">
             <ul>
@@ -62,7 +66,9 @@
                 /></a>
               </li>
               <li>
-                <a href="#"><img src="./img/Vector (3).svg" alt="AngeList logo" /></a>
+                <a href="#"
+                  ><img src="./img/Vector (3).svg" alt="AngeList logo"
+                /></a>
               </li>
             </ul>
           </div>
@@ -70,9 +76,7 @@
       </section>
     </section>
 
-    <section class="works-section">
-     
-    </section>
+    <section class="works-section"></section>
 
     <section class="about-section" id="about-section">
       <div class="container about">
@@ -97,7 +101,9 @@
               /></a>
             </li>
             <li>
-              <a href="#"><img src="./img/Vector (1).svg" alt="Medium logo" /></a>
+              <a href="#"
+                ><img src="./img/Vector (1).svg" alt="Medium logo"
+              /></a>
             </li>
             <li>
               <a href="https://github.com/Linushaddai99"
@@ -105,7 +111,9 @@
               /></a>
             </li>
             <li>
-              <a href="#"><img src="./img/Vector (3).svg" alt="AngelList logo" /></a>
+              <a href="#"
+                ><img src="./img/Vector (3).svg" alt="AngelList logo"
+              /></a>
             </li>
           </ul>
           <a href="#" class="btn btn-animation">Get my resume</a>
@@ -152,7 +160,7 @@
     </section>
 
     <section class="form-section" id="contact-section">
-      <form action="https://formspree.io/f/xkneryal" method="post">
+      <form action="https://formspree.io/f/xqkjljqj" id="form" method="post">
         <h2>Contact Me</h2>
         <p>
           If you have an application you are interested in developing, a feature
@@ -164,6 +172,7 @@
           type="text"
           name="name"
           id="name"
+          class="form-data"
           placeholder="Your name"
           maxlength="30"
           required
@@ -174,6 +183,7 @@
           type="email"
           name="mail"
           id="email"
+          class="form-data"
           placeholder="Your email"
           required
         />
@@ -185,6 +195,7 @@
           id="message"
           cols="30"
           rows="10"
+          class="form-data"
           placeholder="Write your message here"
           maxlength="500"
         ></textarea>
@@ -198,11 +209,19 @@
 
     <section class="mobile-menu-wrapper mobile-menu-js hide">
       <div class="mobile-menu">
-        <div class="close"><img class="close-icon close-js" src="./img/close-icon.svg" alt="close menu"></div>
+        <div class="close">
+          <img
+            class="close-icon close-js"
+            src="./img/close-icon.svg"
+            alt="close menu"
+          />
+        </div>
         <ul>
           <li class="mobile-menu-option"><a href="#">Portfolio</a></li>
           <li class="mobile-menu-option"><a href="#about-section">About</a></li>
-          <li class="mobile-menu-option"><a href="#contact-section">Contact</a></li>
+          <li class="mobile-menu-option">
+            <a href="#contact-section">Contact</a>
+          </li>
         </ul>
       </div>
     </section>
