@@ -58,11 +58,11 @@ inputElements.forEach((input) => {
   });
 });
 // Get Data from LS
-// document.addEventListener('DOMContentLoaded',()=>{
-//  let formDataInputs = JSON.parse(localStorage.getItem('formData'));
-//  if(formDataInputs != null){
-//  nameElement.value= formDataInputs.name;
-//   email.value = formDataInputs.email;
-//   msgElement.value =  formDataInputs.message;
-//  }
-// });
+document.addEventListener('DOMContentLoaded',()=>{
+ let formDataInputs = JSON.parse(localStorage.getItem('formData'));
+ if(formDataInputs != null){
+ nameElement.value= formDataInputs.name;
+  email.value = formDataInputs.email;
+  msgElement.value =  formDataInputs.message;
+ }
+});
