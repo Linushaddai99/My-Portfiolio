@@ -6,6 +6,8 @@ const mobileNavigation = document.querySelectorAll('.mobile-menu-option');
 const fade = document.querySelector('#element');
 const formElement = document.querySelector('#form');
 const email = document.getElementById('email');
+const nameElement = document.getElementById('name');
+const msgElement = document.getElementById('message');
 const error = document.querySelector('.error-mssg');
 const inputElements = document.querySelectorAll('.form-data');
 
@@ -41,3 +43,19 @@ formElement.addEventListener('submit', (e) => {
   e.preventDefault();
   validateForm();
 });
+
+function savetoLocalStorage(){
+  let formData = {
+    name: nameElement.value,
+    email: email.value,
+    message: msgElement.value
+  }
+  localStorage.setItem('formData', JSON.stringify(formData));
+}
+
+inputElements.forEach((input)=>{
+  input.addEventListener('input',()=>{
+    savetoLocalStorage();
+  })
+})
+
